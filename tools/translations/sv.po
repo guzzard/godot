@@ -19,15 +19,15 @@ msgstr ""
 
 #: scene/2d/animated_sprite.cpp
 msgid "A SpriteFrames resource must be created or set in the 'Frames' property in order for AnimatedSprite to display frames."
-msgstr "En SpriteFrames resurs måste skapas eller ställa i \"ramar egendom för att AnimatedSprite att visa ramar."
+msgstr "En SpriteFrames resurs måste skapas eller ställas in i 'Bildrutans' egenskaper för att AnimatedSprite ska visa bildrutor."
 
 #: scene/2d/canvas_modulate.cpp
 msgid "Only one visible CanvasModulate is allowed per scene (or set of instanced scenes). The first created one will work, while the rest will be ignored."
-msgstr "Endast en synlig CanvasModulate tillåts per scen (eller uppsättning av instanser scener). Den första skapade en kommer att fungera, medan resten kommer att ignoreras."
+msgstr "Endast en synlig CanvasModulate tillåts per scen (eller uppsättning av instansierade scener). Den först skapade kommer att fungera, medan resten kommer ignoreras."
 
 #: scene/2d/collision_polygon_2d.cpp
 msgid "CollisionPolygon2D only serves to provide a collision shape to a CollisionObject2D derived node. Please only use it as a child of Area2D, StaticBody2D, RigidBody2D, KinematicBody2D, etc. to give them a shape."
-msgstr "CollisionPolygon2D tjänar endast till att tillhandahålla en kollision form till en CollisionObject2D härledd nod. Använd endast det som ett barn av Area2D, StaticBody2D, RigidBody2D, KinematicBody2D, etc. för att ge dem en form."
+msgstr "CollisionPolygon2D är endast tänkt för att tillhandahålla en kollisionsform till en nod härledd från CollisionObject2D. Använd endast som undernod till Area2D, StaticBody2D, RigidBody2D, KinematicBody2D, etc. för att ge dem en form."
 
 #: scene/2d/collision_polygon_2d.cpp
 msgid "An empty CollisionPolygon2D has no effect on collision."
@@ -35,35 +35,35 @@ msgstr "En tom CollisionPolygon2D har ingen effekt på kollision."
 
 #: scene/2d/collision_shape_2d.cpp
 msgid "CollisionShape2D only serves to provide a collision shape to a CollisionObject2D derived node. Please only use it as a child of Area2D, StaticBody2D, RigidBody2D, KinematicBody2D, etc. to give them a shape."
-msgstr "CollisionShape2D tjänar endast till att tillhandahålla en kollision form till en CollisionObject2D härledd nod. Använd endast det som ett barn av Area2D, StaticBody2D, RigidBody2D, KinematicBody2D, etc. för att ge dem en form."
+msgstr "CollisionShape2D är endast tänkt för att tillhandahålla en kollisionsform till en nod härledd från CollisionObject2D. Använd endast som undernod till Area2D, StaticBody2D, RigidBody2D, KinematicBody2D, etc. för att ge dem en form."
 
 #: scene/2d/collision_shape_2d.cpp
 msgid "A shape must be provided for CollisionShape2D to function. Please create a shape resource for it!"
-msgstr "En form måste tillhandahållas för CollisionShape2D att fungera. Skapa en form resurs för det!"
+msgstr "En form måste tillhandahållas för att CollisionShape2D ska fungera. Skapa en formresurs!"
 
 #: scene/2d/light_2d.cpp
 msgid "A texture with the shape of the light must be supplied to the 'texture' property."
-msgstr "En struktur med formen av ljuset måste tillföras \"struktur\" egendom."
+msgstr "En textur av ljusets form måste ställas in i texturegenskaperna."
 
 #: scene/2d/light_occluder_2d.cpp
 msgid "An occluder polygon must be set (or drawn) for this occluder to take effect."
-msgstr "En tillslutnings polygon måste ställas in (eller dras) för denna tillslutning ska träda i kraft."
+msgstr "En ljusblockerande polygon måste ställas in (eller ritas) för denna ljusblockerare ska fungera."
 
 #: scene/2d/light_occluder_2d.cpp
 msgid "The occluder polygon for this occluder is empty. Please draw a polygon!"
-msgstr "Tillslutningen polygon för denna tillslutning är tom. Vänligen dra en polygon!"
+msgstr "Den ljusblockerande polygonen för denna ljusblockerare är tom. Vänligen rita en polygon!"
 
 #: scene/2d/navigation_polygon.cpp
 msgid "A NavigationPolygon resource must be set or created for this node to work. Please set a property or draw a polygon."
-msgstr "En NavigationPolygon resurs måste ställas in eller skapas för denna nod att fungera. Vänligen ange en egenskap eller rita en polygon."
+msgstr "En NavigationPolygon-resurs måste ställas in eller skapas för att denna nod ska fungera. Vänligen ange en i egenskaperna eller rita en polygon."
 
 #: scene/2d/navigation_polygon.cpp
 msgid "NavigationPolygonInstance must be a child or grandchild to a Navigation2D node. It only provides navigation data."
-msgstr "NavigationPolygonInstance måste vara ett barn eller barnbarn till en Navigation2D nod. Det ger bara navigationsdata."
+msgstr "NavigationPolygonInstance måste vara ett barn eller barnbarn till en Navigation2D-nod. Den förser endast navigationsdata."
 
 #: scene/2d/parallax_layer.cpp
 msgid "ParallaxLayer node only works when set as child of a ParallaxBackground node."
-msgstr "ParallaxLayer nod fungerar endast när den är inställd som barn till en ParallaxBackground nod."
+msgstr "ParallaxLayer-nod fungerar endast när den är inställd som barn till en ParallaxBackground-nod."
 
 #: scene/2d/particles_2d.cpp
 msgid "Path property must point to a valid Particles2D node to work."
@@ -141,77 +141,119 @@ msgstr "Varning!"
 msgid "Please Confirm..."
 msgstr "Vänligen bekräfta..."
 
-#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp
+#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
 msgid "Cut"
 msgstr "Klipp ut"
 
-#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp tools/editor/property_editor.cpp tools/editor/resources_dock.cpp
+#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/property_editor.cpp tools/editor/resources_dock.cpp
 msgid "Copy"
 msgstr "Kopiera"
 
-#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp tools/editor/plugins/resource_preloader_editor_plugin.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp
+#: tools/editor/plugins/resource_preloader_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
 #: tools/editor/property_editor.cpp tools/editor/resources_dock.cpp
 msgid "Paste"
 msgstr "Klistra in"
 
-#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp tools/editor/project_export.cpp
+#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/project_export.cpp
 msgid "Select All"
 msgstr "Markera allt"
 
-#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp tools/editor/editor_log.cpp tools/editor/plugins/animation_tree_editor_plugin.cpp tools/editor/plugins/rich_text_editor_plugin.cpp tools/editor/property_editor.cpp tools/editor/script_editor_debugger.cpp
+#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp tools/editor/editor_log.cpp
+#: tools/editor/plugins/animation_tree_editor_plugin.cpp
+#: tools/editor/plugins/rich_text_editor_plugin.cpp
+#: tools/editor/property_editor.cpp tools/editor/script_editor_debugger.cpp
 msgid "Clear"
 msgstr "Rensa"
 
-#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp tools/editor/editor_node.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp
+#: scene/gui/line_edit.cpp scene/gui/text_edit.cpp tools/editor/editor_node.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
 msgid "Undo"
 msgstr "Ångra"
 
 #: scene/gui/popup.cpp
 msgid "Popups will hide by default unless you call popup() or any of the popup*() functions. Making them visible for editing is fine though, but they will hide upon running."
-msgstr "Popups kommer att dölja som standard om du ringer popup () eller någon av popup * () funktioner. Gör dem synliga för redigering är bra men, men de kommer att dölja vid löpning."
+msgstr "Popup-fönster kommer att döljas som standard såvida du inte anropar popup() eller någon av popup*()-funktionerna. Att göra dem synliga för editering är bra, men de kommer gömmas vid körning."
 
 #: scene/main/viewport.cpp
 msgid "This viewport is not set as render target. If you intend for it to display its contents directly to the screen, make it a child of a Control so it can obtain a size. Otherwise, make it a RenderTarget and assign its internal texture to some node for display."
-msgstr "Denna visnings är inte inställd som gör mål. Om du tänker för att visa dess innehåll direkt till skärmen, gör det ett barn av en kontroll så att den kan få en storlek. Annars gör det en RenderTarget och överlåta sin interna struktur till viss nod för visning."
+msgstr "Denna vy är inte inställd renderingsmål. Om du har för avsikt att visa dess innehåll direkt på skärmen, gör den då till ett barn till en Control så att den kan erhålla en storlek. Annars, gör den till en RenderTarget och tilldela dess interna textur till någon nod för visning."
 
-#: scene/resources/dynamic_font.cpp tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: scene/resources/dynamic_font.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
 msgid "Error initializing FreeType."
-msgstr "Fel vid initiering Freetype."
+msgstr "Fel vid initiering av FreeType."
 
-#: scene/resources/dynamic_font.cpp tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: scene/resources/dynamic_font.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
 msgid "Unknown font format."
-msgstr "Okänd teckenformat."
+msgstr "Okänt teckensnittsformat."
 
-#: scene/resources/dynamic_font.cpp tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: scene/resources/dynamic_font.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
 msgid "Error loading font."
 msgstr "Fel vid inläsning av teckensnitt."
 
-#: scene/resources/dynamic_font.cpp tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: scene/resources/dynamic_font.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
 msgid "Invalid font size."
 msgstr "Ogiltig teckenstorlek."
 
-#: tools/editor/addon_editor_plugin.cpp tools/editor/call_dialog.cpp tools/editor/connections_dialog.cpp tools/editor/groups_editor.cpp tools/editor/import_settings.cpp tools/editor/plugins/animation_player_editor_plugin.cpp
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/resource_preloader_editor_plugin.cpp tools/editor/plugins/sample_library_editor_plugin.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp
-#: tools/editor/project_settings.cpp tools/editor/property_editor.cpp tools/editor/run_settings_dialog.cpp tools/editor/settings_config_dialog.cpp
+#: tools/editor/addon_editor_plugin.cpp tools/editor/call_dialog.cpp
+#: tools/editor/connections_dialog.cpp tools/editor/groups_editor.cpp
+#: tools/editor/import_settings.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/resource_preloader_editor_plugin.cpp
+#: tools/editor/plugins/sample_library_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: tools/editor/project_settings.cpp tools/editor/property_editor.cpp
+#: tools/editor/run_settings_dialog.cpp tools/editor/settings_config_dialog.cpp
 msgid "Close"
 msgstr "Stäng"
 
-#: tools/editor/addon_editor_plugin.cpp tools/editor/create_dialog.cpp tools/editor/editor_help.cpp tools/editor/editor_node.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/quick_open.cpp tools/editor/settings_config_dialog.cpp
+#: tools/editor/addon_editor_plugin.cpp tools/editor/create_dialog.cpp
+#: tools/editor/editor_help.cpp tools/editor/editor_node.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/quick_open.cpp
+#: tools/editor/settings_config_dialog.cpp
 msgid "Search:"
-msgstr "Sök"
+msgstr "Sök:"
 
-#: tools/editor/addon_editor_plugin.cpp tools/editor/code_editor.cpp tools/editor/editor_help.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp tools/editor/project_settings.cpp
+#: tools/editor/addon_editor_plugin.cpp tools/editor/code_editor.cpp
+#: tools/editor/editor_help.cpp tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/project_settings.cpp
 msgid "Search"
 msgstr "Sök"
 
-#: tools/editor/addon_editor_plugin.cpp tools/editor/editor_node.cpp tools/editor/io_plugins/editor_font_import_plugin.cpp tools/editor/io_plugins/editor_mesh_import_plugin.cpp tools/editor/io_plugins/editor_sample_import_plugin.cpp
-#: tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/io_plugins/editor_texture_import_plugin.cpp tools/editor/io_plugins/editor_translation_import_plugin.cpp tools/editor/project_manager.cpp
+#: tools/editor/addon_editor_plugin.cpp tools/editor/editor_node.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: tools/editor/io_plugins/editor_mesh_import_plugin.cpp
+#: tools/editor/io_plugins/editor_sample_import_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/io_plugins/editor_texture_import_plugin.cpp
+#: tools/editor/io_plugins/editor_translation_import_plugin.cpp
+#: tools/editor/project_manager.cpp
 msgid "Import"
 msgstr "Importera"
 
-#: tools/editor/addon_editor_plugin.cpp tools/editor/project_settings.cpp tools/editor/settings_config_dialog.cpp
+#: tools/editor/addon_editor_plugin.cpp tools/editor/project_settings.cpp
+#: tools/editor/settings_config_dialog.cpp
 msgid "Plugins"
-msgstr "Plugin"
+msgstr "Insticksprogram"
 
 #: tools/editor/addon_editor_plugin.cpp
 msgid "Sort:"
@@ -219,11 +261,11 @@ msgstr "Sortera:"
 
 #: tools/editor/addon_editor_plugin.cpp
 msgid "Reverse"
-msgstr "Tillbaka"
+msgstr "Motsatt riktning"
 
 #: tools/editor/addon_editor_plugin.cpp tools/editor/project_settings.cpp
 msgid "Category:"
-msgstr "Kategorier"
+msgstr "Kategorier:"
 
 #: tools/editor/addon_editor_plugin.cpp
 msgid "All"
@@ -235,11 +277,11 @@ msgstr "Sajt:"
 
 #: tools/editor/addon_editor_plugin.cpp
 msgid "Assets ZIP File"
-msgstr "Tillgångar ZIP-fil"
+msgstr "Resurser ZIP-fil"
 
 #: tools/editor/animation_editor.cpp
 msgid "Disabled"
-msgstr "Har inaktiverats"
+msgstr "Inaktiverad"
 
 #: tools/editor/animation_editor.cpp
 msgid "All Selection"
@@ -251,135 +293,137 @@ msgstr "Flytta lägg till nyckel"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Change Transition"
-msgstr "Ändra animationsövergång"
+msgstr "Animation, ändra övergång"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Change Transform"
-msgstr "Ändra animationsomvandling"
+msgstr "Animation, ändra omvandling"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Change Value"
-msgstr "Ändra animationsväde"
+msgstr "Animation, ändra värde"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Change Call"
-msgstr "Ändra animationsanrop"
+msgstr "Animation, ändra anrop"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Add Track"
-msgstr "Lägg till animationsspår"
+msgstr "Animation, lägg till spår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Move Anim Track Up"
-msgstr "Flytta upp animationsspår"
+msgstr "Animation, flytta upp spår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Move Anim Track Down"
-msgstr "Flytta ner animationsspår"
+msgstr "Animation, flytta ner spår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Remove Anim Track"
-msgstr "Avlägsna Anim Track"
+msgstr "Ta bort animationsspår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Duplicate Keys"
-msgstr "Anim Duplicate Keys"
+msgstr "Animation, duplicera nycklar"
 
 #: tools/editor/animation_editor.cpp
 msgid "Set Transitions to:"
-msgstr "Ställ övergångar till:"
+msgstr "Sätt övergångar till:"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Track Rename"
-msgstr "Anim Track Rename"
+msgstr "Animation, döp om spår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Track Change Interpolation"
-msgstr "Anim Track Ändra Interpolation"
+msgstr "Animation, ändra interpolation för spår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Track Change Value Mode"
-msgstr "Anim Track Ändra värde läge"
+msgstr "Animation, ändra värdesinställning för spår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Edit Node Curve"
-msgstr "Redigera Node Curve"
+msgstr "Redigera nodkurva"
 
 #: tools/editor/animation_editor.cpp
 msgid "Edit Selection Curve"
-msgstr "Edit Selection Curve"
+msgstr "Redigera urvalskurva"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Delete Keys"
-msgstr "Anim Delete"
+msgstr "Animation, ta bort nycklar"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Add Key"
-msgstr "Anim Lägg till nyckel"
+msgstr "Animation, lägg till nyckel"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Move Keys"
-msgstr "Anim Move Keys"
+msgstr "Animation, flytta nycklar"
 
 #: tools/editor/animation_editor.cpp
 msgid "Scale Selection"
-msgstr "skala Selection"
+msgstr "Skala urval"
 
 #: tools/editor/animation_editor.cpp
 msgid "Scale From Cursor"
 msgstr "Skala från markör"
 
-#: tools/editor/animation_editor.cpp tools/editor/plugins/tile_map_editor_plugin.cpp
+#: tools/editor/animation_editor.cpp
+#: tools/editor/plugins/tile_map_editor_plugin.cpp
 msgid "Duplicate Selection"
-msgstr "Duplicate Selection"
+msgstr "Duplicera urval"
 
 #: tools/editor/animation_editor.cpp
 msgid "Duplicate Transposed"
-msgstr "Duplicate införlivat"
+msgstr "Duplicera införlivat"
 
 #: tools/editor/animation_editor.cpp
 msgid "Goto Next Step"
-msgstr "Goto Nästa steg"
+msgstr "Gå till nästa steg"
 
 #: tools/editor/animation_editor.cpp
 msgid "Goto Prev Step"
-msgstr "Goto Föreg Steg"
+msgstr "Gå till föregående steg"
 
 #: tools/editor/animation_editor.cpp tools/editor/property_editor.cpp
 msgid "Linear"
-msgstr "12.958 | | Linjär +"
+msgstr "Linjär"
 
-#: tools/editor/animation_editor.cpp tools/editor/plugins/theme_editor_plugin.cpp
+#: tools/editor/animation_editor.cpp
+#: tools/editor/plugins/theme_editor_plugin.cpp
 msgid "Constant"
 msgstr "Konstant"
 
 #: tools/editor/animation_editor.cpp
 msgid "In"
-msgstr "Då ha"
+msgstr "In"
 
 #: tools/editor/animation_editor.cpp
 msgid "Out"
-msgstr "-Ut!"
+msgstr "Ut"
 
 #: tools/editor/animation_editor.cpp
 msgid "In-Out"
-msgstr "In ut"
+msgstr "In-ut"
 
 #: tools/editor/animation_editor.cpp
 msgid "Out-In"
-msgstr "Out-In"
+msgstr "Ut-in"
 
 #: tools/editor/animation_editor.cpp
 msgid "Transitions"
-msgstr "övergångar"
+msgstr "Övergångar"
 
 #: tools/editor/animation_editor.cpp
 msgid "Optimize Animation"
-msgstr "optimera Animation"
+msgstr "Optimera animation"
 
 #: tools/editor/animation_editor.cpp
 msgid "Clean-Up Animation"
-msgstr "Clean-Up Animation"
+msgstr "Städa animation"
 
 #: tools/editor/animation_editor.cpp
 msgid "Create NEW track for %s and insert key?"
@@ -387,52 +431,56 @@ msgstr "Skapa nytt spår för %s och infoga nyckeln?"
 
 #: tools/editor/animation_editor.cpp
 msgid "Create %d NEW tracks and insert keys?"
-msgstr "Skapa %d nya banor och infoga nycklarna?"
+msgstr "Skapa %d nya spår och infoga nycklarna?"
 
-#: tools/editor/animation_editor.cpp tools/editor/create_dialog.cpp tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/mesh_instance_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp
-#: tools/editor/plugins/particles_editor_plugin.cpp tools/editor/project_manager.cpp tools/editor/script_create_dialog.cpp
+#: tools/editor/animation_editor.cpp tools/editor/create_dialog.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/mesh_instance_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/particles_editor_plugin.cpp
+#: tools/editor/project_manager.cpp tools/editor/script_create_dialog.cpp
 msgid "Create"
 msgstr "Skapa"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Create & Insert"
-msgstr "Anim Skapa & Insert"
+msgstr "Animation, skapa & infoga"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Insert Track & Key"
-msgstr "Anim Sätt Track & Key"
+msgstr "Animation, infoga spår och nyckel"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Insert Key"
-msgstr "Anim Infoga Key"
+msgstr "Animation, infoga nyckel"
 
 #: tools/editor/animation_editor.cpp
 msgid "Change Anim Len"
-msgstr "Förändring Anim Len"
+msgstr "Ändra animationslängd"
 
 #: tools/editor/animation_editor.cpp
 msgid "Change Anim Loop"
-msgstr "Förändring Anim Loop"
+msgstr "Ändra animationsloop"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Create Typed Value Key"
-msgstr "Anim Skapa Skrivna Value Key"
+msgstr "Animation, skapa inmatat nyckelvärde"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Insert"
-msgstr "anim Insert"
+msgstr "Animation, infoga"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Scale Keys"
-msgstr "Anim Scale Keys"
+msgstr "Animation, skala nycklar"
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim Add Call Track"
-msgstr "Anim Lägg till samtal Track"
+msgstr "Animation, lägg till anropsspår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Animation zoom."
-msgstr "Animation zoom."
+msgstr "Animationszoom."
 
 #: tools/editor/animation_editor.cpp
 msgid "Length (s):"
@@ -440,19 +488,19 @@ msgstr "Längd (s):"
 
 #: tools/editor/animation_editor.cpp
 msgid "Animation length (in seconds)."
-msgstr "Animation längd (i sekunder)."
+msgstr "Animationslängd (i sekunder)."
 
 #: tools/editor/animation_editor.cpp
 msgid "Step (s):"
-msgstr "Steg (n):"
+msgstr "Steg (s):"
 
 #: tools/editor/animation_editor.cpp
 msgid "Cursor step snap (in seconds)."
-msgstr "Markören steg snap (i sekunder)."
+msgstr "Markörsteg (i sekunder)."
 
 #: tools/editor/animation_editor.cpp
 msgid "Enable/Disable looping in animation."
-msgstr "Aktivera / inaktivera looping i animation."
+msgstr "Aktivera/inaktivera looping i animation."
 
 #: tools/editor/animation_editor.cpp
 msgid "Add new tracks."
@@ -460,19 +508,19 @@ msgstr "Lägg till nya spår."
 
 #: tools/editor/animation_editor.cpp
 msgid "Move current track up."
-msgstr "Flytta aktuellt spår upp."
+msgstr "Flytta upp nuvarande spår."
 
 #: tools/editor/animation_editor.cpp
 msgid "Move current track down."
-msgstr "Flytta nuvarande spår ned."
+msgstr "Flytta ner nuvarande spår."
 
 #: tools/editor/animation_editor.cpp
 msgid "Remove selected track."
-msgstr "Ta bort valda spåret."
+msgstr "Ta bort det valda spåret."
 
 #: tools/editor/animation_editor.cpp
 msgid "Track tools"
-msgstr "spårverktyg"
+msgstr "Spårverktyg"
 
 #: tools/editor/animation_editor.cpp
 msgid "Enable editing of individual keys by clicking them."
@@ -480,11 +528,11 @@ msgstr "Aktivera redigering av enskilda nycklar genom att klicka på dem."
 
 #: tools/editor/animation_editor.cpp
 msgid "Anim. Optimizer"
-msgstr "Anim. Optimizer"
+msgstr "Animationsoptimerare"
 
 #: tools/editor/animation_editor.cpp
 msgid "Max. Linear Error:"
-msgstr "Max. Linjär Fel:"
+msgstr "Max. Linjärt fel:"
 
 #: tools/editor/animation_editor.cpp
 msgid "Max. Angular Error:"
@@ -492,7 +540,7 @@ msgstr "Max. Vinkelfel:"
 
 #: tools/editor/animation_editor.cpp
 msgid "Max Optimizable Angle:"
-msgstr "Max Optimizable Vinkel:"
+msgstr "Max optimerbar vinkel:"
 
 #: tools/editor/animation_editor.cpp
 msgid "Optimize"
@@ -508,11 +556,11 @@ msgstr "Övergång"
 
 #: tools/editor/animation_editor.cpp
 msgid "Scale Ratio:"
-msgstr "Skala Ratio:"
+msgstr "Skalningsproportioner:"
 
 #: tools/editor/animation_editor.cpp
 msgid "Call Functions in Which Node?"
-msgstr "Ring funktioner där Node?"
+msgstr "Anropa funktioner i vilken nod?"
 
 #: tools/editor/animation_editor.cpp
 msgid "Remove invalid keys"
@@ -524,11 +572,11 @@ msgstr "Ta bort olösta och tomma spår"
 
 #: tools/editor/animation_editor.cpp
 msgid "Clean-up all animations"
-msgstr "Saneringen alla animationer"
+msgstr "Städa alla animationer"
 
 #: tools/editor/animation_editor.cpp
 msgid "Clean-Up Animation(s) (NO UNDO!)"
-msgstr "Clean-Up Animation (s) (ingen ångra!)"
+msgstr "Städa animation(er) (GÅR EJ ATT ÅNGRA!)"
 
 #: tools/editor/animation_editor.cpp
 msgid "Clean-Up"
@@ -536,27 +584,27 @@ msgstr "Städa"
 
 #: tools/editor/array_property_edit.cpp
 msgid "Resize Array"
-msgstr "ändra storlek Array"
+msgstr "Ändra storlek på array"
 
 #: tools/editor/array_property_edit.cpp
 msgid "Change Array Value Type"
-msgstr "Ändra Array Värdetyp"
+msgstr "Ändra värdestyp för array"
 
 #: tools/editor/array_property_edit.cpp
 msgid "Change Array Value"
-msgstr "Ändra Array Värde"
+msgstr "Ändra arrayvärde"
 
 #: tools/editor/call_dialog.cpp
 msgid "Method List For '%s':"
-msgstr "Metod Lista för \" %s \":"
+msgstr "Metodlista för '%s':"
 
 #: tools/editor/call_dialog.cpp
 msgid "Call"
-msgstr "Syna"
+msgstr "Anropa"
 
 #: tools/editor/call_dialog.cpp
 msgid "Method List:"
-msgstr "Metod Lista:"
+msgstr "Metodlista:"
 
 #: tools/editor/call_dialog.cpp
 msgid "Arguments:"
@@ -572,19 +620,19 @@ msgstr "Gå till linje"
 
 #: tools/editor/code_editor.cpp
 msgid "Line Number:"
-msgstr "Linje nummer:"
+msgstr "Linjenummer:"
 
 #: tools/editor/code_editor.cpp
 msgid "No Matches"
-msgstr "Inga matchar..."
+msgstr "Inga träffar"
 
 #: tools/editor/code_editor.cpp
 msgid "Replaced %d Ocurrence(s)."
-msgstr "Ersättas %d Ocurrence (er)."
+msgstr "Ersatte %d förekomst(er)."
 
 #: tools/editor/code_editor.cpp
 msgid "Replace"
-msgstr "Byta ut"
+msgstr "Ersätt"
 
 #: tools/editor/code_editor.cpp
 msgid "Replace All"
@@ -592,11 +640,11 @@ msgstr "Ersätt alla"
 
 #: tools/editor/code_editor.cpp
 msgid "Match Case"
-msgstr "Liknande fall"
+msgstr "Matcha versaler/gemener"
 
 #: tools/editor/code_editor.cpp
 msgid "Whole Words"
-msgstr "hela ord"
+msgstr "Hela ord"
 
 #: tools/editor/code_editor.cpp
 msgid "Selection Only"
@@ -612,11 +660,11 @@ msgstr "Nästa"
 
 #: tools/editor/code_editor.cpp
 msgid "Replaced %d ocurrence(s)."
-msgstr "Ersättas %d ocurrence (er)."
+msgstr "Ersatte %d förekomst(er)."
 
 #: tools/editor/code_editor.cpp
 msgid "Not found!"
-msgstr "Filen kunde inte hittas"
+msgstr "Hittades ej!"
 
 #: tools/editor/code_editor.cpp
 msgid "Replace By"
@@ -632,7 +680,7 @@ msgstr "Bakåt"
 
 #: tools/editor/code_editor.cpp
 msgid "Prompt On Replace"
-msgstr "Prompt på Ersätt"
+msgstr "Fråga vid ersättning"
 
 #: tools/editor/code_editor.cpp
 msgid "Skip"
@@ -640,35 +688,41 @@ msgstr "Hoppa över"
 
 #: tools/editor/code_editor.cpp tools/editor/script_editor_debugger.cpp
 msgid "Line:"
-msgstr "Rikta"
+msgstr "Linje:"
 
 #: tools/editor/code_editor.cpp
 msgid "Col:"
-msgstr "col:"
+msgstr "Col:"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Method in target Node must be specified!"
-msgstr "Metod i målnoden måste anges!"
+msgstr "Metod i målnod måste anges!"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Connect To Node:"
-msgstr "Anslut till Node:"
+msgstr "Anslut till nod:"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Binds (Extra Params):"
-msgstr "Binder (Extra params):"
+msgstr "Binder (extra parametrar):"
 
-#: tools/editor/connections_dialog.cpp tools/editor/groups_editor.cpp tools/editor/plugins/item_list_editor_plugin.cpp tools/editor/plugins/theme_editor_plugin.cpp tools/editor/project_settings.cpp
+#: tools/editor/connections_dialog.cpp tools/editor/groups_editor.cpp
+#: tools/editor/plugins/item_list_editor_plugin.cpp
+#: tools/editor/plugins/theme_editor_plugin.cpp
+#: tools/editor/project_settings.cpp
 msgid "Add"
 msgstr "Lägg till"
 
-#: tools/editor/connections_dialog.cpp tools/editor/dependency_editor.cpp tools/editor/plugins/animation_tree_editor_plugin.cpp tools/editor/plugins/theme_editor_plugin.cpp tools/editor/project_manager.cpp
+#: tools/editor/connections_dialog.cpp tools/editor/dependency_editor.cpp
+#: tools/editor/plugins/animation_tree_editor_plugin.cpp
+#: tools/editor/plugins/theme_editor_plugin.cpp
+#: tools/editor/project_manager.cpp
 msgid "Remove"
 msgstr "Ta bort"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Path To Node:"
-msgstr "Väg till nod:"
+msgstr "Sökväg till nod:"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Method In Node:"
@@ -676,15 +730,15 @@ msgstr "Metod i nod:"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Make Function"
-msgstr "göra Funktion"
+msgstr "Gör funktion"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Deferred"
-msgstr "uppskjuten"
+msgstr "Uppskjuten"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Oneshot"
-msgstr "Ett skott"
+msgstr "En gång"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Connect"
@@ -692,7 +746,7 @@ msgstr "Ansluta"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Connect '%s' to '%s'"
-msgstr "Anslut \" %s \" till \" %s \""
+msgstr "Anslut '%s' till '%s'"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Create Subscription"
@@ -700,31 +754,33 @@ msgstr "Skapa prenumeration"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Connect.."
-msgstr "Ansluta"
+msgstr "Anslut.."
 
-#: tools/editor/connections_dialog.cpp tools/editor/plugins/animation_tree_editor_plugin.cpp
+#: tools/editor/connections_dialog.cpp
+#: tools/editor/plugins/animation_tree_editor_plugin.cpp
 msgid "Disconnect"
 msgstr "Koppla ifrån"
 
 #: tools/editor/connections_dialog.cpp
 msgid "Edit Connections.."
-msgstr "Redigera anslutningar .."
+msgstr "Redigera anslutningar.."
 
 #: tools/editor/connections_dialog.cpp
 msgid "Connections:"
-msgstr "Anslutningar"
+msgstr "Anslutningar:"
 
 #: tools/editor/create_dialog.cpp
 msgid "Create New"
 msgstr "Skapa ny"
 
-#: tools/editor/create_dialog.cpp tools/editor/editor_help.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/quick_open.cpp
+#: tools/editor/create_dialog.cpp tools/editor/editor_help.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/quick_open.cpp
 msgid "Matches:"
-msgstr "Resultat"
+msgstr "Resultat:"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Search Replacement For:"
-msgstr "Sök Ersättare till:"
+msgstr "Sök ersättning för:"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Dependencies For:"
@@ -734,41 +790,46 @@ msgstr "Beroenden för:"
 msgid ""
 "Scene '%s' is currently being edited.\n"
 "Changes will not take effect unless reloaded."
-msgstr "Scene \" %s \" för närvarande redigeras. \\ NÄndringarna börjar inte gälla om inte laddas."
+msgstr ""
+"Scen '%s' redigeras för närvarande.\n"
+"Ändringarna börjar gälla efter att scenen laddats om."
 
 #: tools/editor/dependency_editor.cpp
 msgid ""
 "Resource '%s' is in use.\n"
 "Changes will take effect when reloaded."
-msgstr "Resursen \" %s \" är i bruk. \\ NÄndringarna träder i kraft när laddas."
+msgstr ""
+"Resursen '%s' är i bruk.\n"
+"Ändringarna börjar gälla efter att resursen laddats om."
 
 #: tools/editor/dependency_editor.cpp
 msgid "Dependencies"
-msgstr "beroenden"
+msgstr "Beroenden"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Resource"
-msgstr "\"920.384\", \"1053\", \"R&esurs\""
+msgstr "Resurs"
 
-#: tools/editor/dependency_editor.cpp tools/editor/project_manager.cpp tools/editor/project_settings.cpp
+#: tools/editor/dependency_editor.cpp tools/editor/project_manager.cpp
+#: tools/editor/project_settings.cpp
 msgid "Path"
-msgstr "6.4.7 PATH (SLINGA)"
+msgstr "Sökväg"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Dependencies:"
-msgstr "beroenden:"
+msgstr "Beroenden:"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Fix Broken"
-msgstr "Fix Bruten"
+msgstr "Fixa trasig"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Dependency Editor"
-msgstr "Dependency Editor"
+msgstr "Beroendeeditor"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Search Replacement Resource:"
-msgstr "Sökning Replacement Resurs:"
+msgstr "Sök efter ersättningsresurs:"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Owners Of:"
@@ -778,15 +839,17 @@ msgstr "Ägare av:"
 msgid ""
 "The files being removed are required by other resources in order for them to work.\n"
 "Remove them anyway? (no undo)"
-msgstr "krävs av andra källor Filerna tas bort för att de ska fungera. \\ nRemove dem ändå? (Ingen ångra)"
+msgstr ""
+"Filerna som tas bort behövs för att andra resurser ska fungera.\n"
+"Ta bort ändå? (går ej att ångra)"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Remove selected files from the project? (no undo)"
-msgstr "Ta bort markerade filer från projektet? (Ingen ångra)"
+msgstr "Ta bort markerade filer från projektet? (går ej att ångra)"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Error loading:"
-msgstr "Problem att ladda:"
+msgstr "Fel vid inläsning av:"
 
 #: tools/editor/dependency_editor.cpp
 msgid "Scene failed to load due to missing dependencies:"
@@ -828,7 +891,9 @@ msgstr "Orphan Resource Explorer"
 msgid "Delete selected files?"
 msgstr "Ta bort markerade filer?"
 
-#: tools/editor/dependency_editor.cpp tools/editor/editor_node.cpp tools/editor/plugins/item_list_editor_plugin.cpp tools/editor/scenes_dock.cpp
+#: tools/editor/dependency_editor.cpp tools/editor/editor_node.cpp
+#: tools/editor/plugins/item_list_editor_plugin.cpp
+#: tools/editor/scenes_dock.cpp
 msgid "Delete"
 msgstr "Radera"
 
@@ -852,7 +917,9 @@ msgstr "Välj en katalog..."
 msgid "Create Folder"
 msgstr "Skapa mapp"
 
-#: tools/editor/editor_dir_dialog.cpp tools/editor/editor_file_dialog.cpp tools/editor/editor_plugin_settings.cpp tools/editor/plugins/theme_editor_plugin.cpp
+#: tools/editor/editor_dir_dialog.cpp tools/editor/editor_file_dialog.cpp
+#: tools/editor/editor_plugin_settings.cpp
+#: tools/editor/plugins/theme_editor_plugin.cpp
 msgid "Name:"
 msgstr "Namn:"
 
@@ -876,11 +943,15 @@ msgstr "samtliga redovisade"
 msgid "All Files (*)"
 msgstr "Alla filer (*)"
 
-#: tools/editor/editor_file_dialog.cpp tools/editor/editor_help.cpp tools/editor/editor_node.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/quick_open.cpp tools/editor/scenes_dock.cpp
+#: tools/editor/editor_file_dialog.cpp tools/editor/editor_help.cpp
+#: tools/editor/editor_node.cpp tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/quick_open.cpp tools/editor/scenes_dock.cpp
 msgid "Open"
 msgstr "Öppet"
 
-#: tools/editor/editor_file_dialog.cpp tools/editor/editor_node.cpp tools/editor/plugins/animation_player_editor_plugin.cpp tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/editor_file_dialog.cpp tools/editor/editor_node.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
 msgid "Save"
 msgstr "Spara"
 
@@ -888,7 +959,9 @@ msgstr "Spara"
 msgid "Save a File"
 msgstr "Spara en fil"
 
-#: tools/editor/editor_file_dialog.cpp tools/editor/io_plugins/editor_font_import_plugin.cpp tools/editor/project_settings.cpp tools/editor/script_create_dialog.cpp
+#: tools/editor/editor_file_dialog.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: tools/editor/project_settings.cpp tools/editor/script_create_dialog.cpp
 msgid "Path:"
 msgstr "6.4.7 PATH (SLINGA)"
 
@@ -940,7 +1013,8 @@ msgstr "Klass Lista:"
 msgid "Class:"
 msgstr "Klass"
 
-#: tools/editor/editor_help.cpp tools/editor/scene_tree_editor.cpp tools/editor/script_create_dialog.cpp
+#: tools/editor/editor_help.cpp tools/editor/scene_tree_editor.cpp
+#: tools/editor/script_create_dialog.cpp
 msgid "Inherits:"
 msgstr "ärver:"
 
@@ -1032,11 +1106,15 @@ msgstr "Nod från scen"
 msgid "Re-Import.."
 msgstr "Re-Import .."
 
-#: tools/editor/editor_node.cpp tools/editor/plugins/animation_player_editor_plugin.cpp tools/editor/resources_dock.cpp
+#: tools/editor/editor_node.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/resources_dock.cpp
 msgid "Error saving resource!"
 msgstr "Fel spara resurs!"
 
-#: tools/editor/editor_node.cpp tools/editor/plugins/animation_player_editor_plugin.cpp tools/editor/resources_dock.cpp
+#: tools/editor/editor_node.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/resources_dock.cpp
 msgid "Save Resource As.."
 msgstr "Spara resurs .."
 
@@ -1124,7 +1202,8 @@ msgstr "Kopiera Params"
 msgid "Set Params"
 msgstr "ställa Params"
 
-#: tools/editor/editor_node.cpp tools/editor/plugins/resource_preloader_editor_plugin.cpp
+#: tools/editor/editor_node.cpp
+#: tools/editor/plugins/resource_preloader_editor_plugin.cpp
 msgid "Paste Resource"
 msgstr "pasta Resource"
 
@@ -1274,7 +1353,8 @@ msgstr "%d mer fil (er)"
 msgid "%d more file(s) or folder(s)"
 msgstr "%d mer fil (er) eller mapp (s)"
 
-#: tools/editor/editor_node.cpp tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/editor_node.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
 msgid "Scene"
 msgstr "Scen"
 
@@ -1334,7 +1414,8 @@ msgstr "MeshLibrary .."
 msgid "TileSet.."
 msgstr "Brickuppsättning .."
 
-#: tools/editor/editor_node.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/editor_node.cpp tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
 msgid "Redo"
 msgstr "Gör om"
 
@@ -1474,7 +1555,9 @@ msgstr "Ladda en befintlig resurs från disk och redigera den."
 msgid "Save the currently edited resource."
 msgstr "Spara den aktuella redigerade resurs."
 
-#: tools/editor/editor_node.cpp tools/editor/plugins/animation_player_editor_plugin.cpp tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/editor_node.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
 msgid "Save As.."
 msgstr "spara som"
 
@@ -1502,7 +1585,8 @@ msgstr "Filsystem"
 msgid "Output"
 msgstr "Produktion"
 
-#: tools/editor/editor_node.cpp tools/editor/editor_reimport_dialog.cpp tools/editor/import_settings.cpp
+#: tools/editor/editor_node.cpp tools/editor/editor_reimport_dialog.cpp
+#: tools/editor/import_settings.cpp
 msgid "Re-Import"
 msgstr "Re-Import"
 
@@ -1726,7 +1810,10 @@ msgstr "Den snabba bruna räven hoppar över den lata hunden"
 msgid "Test:"
 msgstr "TEST"
 
-#: tools/editor/io_plugins/editor_font_import_plugin.cpp tools/editor/io_plugins/editor_mesh_import_plugin.cpp tools/editor/io_plugins/editor_sample_import_plugin.cpp tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: tools/editor/io_plugins/editor_mesh_import_plugin.cpp
+#: tools/editor/io_plugins/editor_sample_import_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
 msgid "Options:"
 msgstr "Val"
 
@@ -1734,7 +1821,10 @@ msgstr "Val"
 msgid "Font Import"
 msgstr "font Import"
 
-#: tools/editor/io_plugins/editor_font_import_plugin.cpp tools/editor/io_plugins/editor_sample_import_plugin.cpp tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/io_plugins/editor_texture_import_plugin.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: tools/editor/io_plugins/editor_sample_import_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/io_plugins/editor_texture_import_plugin.cpp
 #: tools/editor/io_plugins/editor_translation_import_plugin.cpp
 msgid "Accept"
 msgstr "Acceptera"
@@ -1751,7 +1841,8 @@ msgstr "Misslyckades öppning som BMFont fil."
 msgid "Invalid font custom source."
 msgstr "Ogiltig tecken anpassad källa."
 
-#: tools/editor/io_plugins/editor_font_import_plugin.cpp tools/editor/plugins/theme_editor_plugin.cpp
+#: tools/editor/io_plugins/editor_font_import_plugin.cpp
+#: tools/editor/plugins/theme_editor_plugin.cpp
 msgid "Font"
 msgstr "Typsnitt"
 
@@ -1759,7 +1850,8 @@ msgstr "Typsnitt"
 msgid "No meshes to import!"
 msgstr "Ingen maskor att importera!"
 
-#: tools/editor/io_plugins/editor_mesh_import_plugin.cpp tools/editor/io_plugins/editor_sample_import_plugin.cpp
+#: tools/editor/io_plugins/editor_mesh_import_plugin.cpp
+#: tools/editor/io_plugins/editor_sample_import_plugin.cpp
 msgid "Save path is empty!"
 msgstr "Spara bana är tom!"
 
@@ -1771,7 +1863,10 @@ msgstr "Single Mesh Import"
 msgid "Source Mesh(es):"
 msgstr "Källa Mesh (er):"
 
-#: tools/editor/io_plugins/editor_mesh_import_plugin.cpp tools/editor/io_plugins/editor_sample_import_plugin.cpp tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/io_plugins/editor_texture_import_plugin.cpp
+#: tools/editor/io_plugins/editor_mesh_import_plugin.cpp
+#: tools/editor/io_plugins/editor_sample_import_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/io_plugins/editor_texture_import_plugin.cpp
 #: tools/editor/io_plugins/editor_translation_import_plugin.cpp
 msgid "Target Path:"
 msgstr "Target Path:"
@@ -1788,15 +1883,21 @@ msgstr "Yta %d"
 msgid "No samples to import!"
 msgstr "Inga prover för att importera!"
 
-#: tools/editor/io_plugins/editor_sample_import_plugin.cpp tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/io_plugins/editor_texture_import_plugin.cpp
+#: tools/editor/io_plugins/editor_sample_import_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/io_plugins/editor_texture_import_plugin.cpp
 msgid "Target path is empty."
 msgstr "Målsökväg är tom."
 
-#: tools/editor/io_plugins/editor_sample_import_plugin.cpp tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/io_plugins/editor_texture_import_plugin.cpp
+#: tools/editor/io_plugins/editor_sample_import_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/io_plugins/editor_texture_import_plugin.cpp
 msgid "Target path must be a complete resource path."
 msgstr "Målsökväg måste vara en komplett resurs väg."
 
-#: tools/editor/io_plugins/editor_sample_import_plugin.cpp tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/io_plugins/editor_texture_import_plugin.cpp
+#: tools/editor/io_plugins/editor_sample_import_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/io_plugins/editor_texture_import_plugin.cpp
 msgid "Target path must exist."
 msgstr "Målsökväg måste finnas."
 
@@ -1848,7 +1949,9 @@ msgstr "max Vinkel"
 msgid "Clips"
 msgstr "Clips"
 
-#: tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/plugins/sample_library_editor_plugin.cpp tools/editor/project_manager.cpp tools/editor/project_settings.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/plugins/sample_library_editor_plugin.cpp
+#: tools/editor/project_manager.cpp tools/editor/project_settings.cpp
 msgid "Name"
 msgstr "Namn"
 
@@ -1860,7 +1963,8 @@ msgstr "Start (s)"
 msgid "End(s)"
 msgstr "12.835 | | Slutar"
 
-#: tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
 msgid "Loop"
 msgstr "Slinga"
 
@@ -1932,7 +2036,8 @@ msgstr "Import & Öppna"
 msgid "Edited scene has not been saved, open imported scene anyway?"
 msgstr "Redigerade scenen har inte sparats, öppna importerade scenen ändå?"
 
-#: tools/editor/io_plugins/editor_scene_import_plugin.cpp tools/editor/plugins/cube_grid_theme_editor_plugin.cpp
+#: tools/editor/io_plugins/editor_scene_import_plugin.cpp
+#: tools/editor/plugins/cube_grid_theme_editor_plugin.cpp
 msgid "Import Scene"
 msgstr "import Scene"
 
@@ -2160,7 +2265,8 @@ msgstr "Ogiltig translation källan!"
 msgid "Column"
 msgstr "Kolumn"
 
-#: tools/editor/io_plugins/editor_translation_import_plugin.cpp tools/editor/script_create_dialog.cpp
+#: tools/editor/io_plugins/editor_translation_import_plugin.cpp
+#: tools/editor/script_create_dialog.cpp
 msgid "Language"
 msgstr "Språk"
 
@@ -2228,7 +2334,8 @@ msgstr "nya Anim"
 msgid "Change Animation Name:"
 msgstr "Byt Animation Namn:"
 
-#: tools/editor/plugins/animation_player_editor_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
 msgid "Remove Animation"
 msgstr "avlägsna Animation"
 
@@ -2240,11 +2347,13 @@ msgstr "FEL: Ogiltigt animation namn!"
 msgid "ERROR: Animation name already exists!"
 msgstr "FEL: Animation namn finns redan!"
 
-#: tools/editor/plugins/animation_player_editor_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
 msgid "Rename Animation"
 msgstr "byta namn Animation"
 
-#: tools/editor/plugins/animation_player_editor_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
 msgid "Add Animation"
 msgstr "lägga Animation"
 
@@ -2352,8 +2461,11 @@ msgstr "Skapa ny Animation"
 msgid "Animation Name:"
 msgstr "Animation Namn:"
 
-#: tools/editor/plugins/animation_player_editor_plugin.cpp tools/editor/plugins/resource_preloader_editor_plugin.cpp tools/editor/plugins/sample_library_editor_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp tools/editor/property_editor.cpp
-#: tools/editor/script_create_dialog.cpp
+#: tools/editor/plugins/animation_player_editor_plugin.cpp
+#: tools/editor/plugins/resource_preloader_editor_plugin.cpp
+#: tools/editor/plugins/sample_library_editor_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: tools/editor/property_editor.cpp tools/editor/script_create_dialog.cpp
 msgid "Error!"
 msgstr "Fel!"
 
@@ -2377,7 +2489,8 @@ msgstr "Animation"
 msgid "New name:"
 msgstr "Nytt namn:"
 
-#: tools/editor/plugins/animation_tree_editor_plugin.cpp tools/editor/plugins/multimesh_editor_plugin.cpp
+#: tools/editor/plugins/animation_tree_editor_plugin.cpp
+#: tools/editor/plugins/multimesh_editor_plugin.cpp
 msgid "Scale:"
 msgstr "SKALA"
 
@@ -2413,7 +2526,8 @@ msgstr "Random Starta (s):"
 msgid "Start!"
 msgstr "Starta"
 
-#: tools/editor/plugins/animation_tree_editor_plugin.cpp tools/editor/plugins/multimesh_editor_plugin.cpp
+#: tools/editor/plugins/animation_tree_editor_plugin.cpp
+#: tools/editor/plugins/multimesh_editor_plugin.cpp
 msgid "Amount:"
 msgstr "Summa"
 
@@ -2573,7 +2687,8 @@ msgstr "Baka!"
 msgid "Reset the lightmap octree baking process (start over)."
 msgstr "Återställ lightmap octree bakningen (börja om)."
 
-#: tools/editor/plugins/camera_editor_plugin.cpp tools/editor/plugins/sample_library_editor_plugin.cpp
+#: tools/editor/plugins/camera_editor_plugin.cpp
+#: tools/editor/plugins/sample_library_editor_plugin.cpp
 msgid "Preview"
 msgstr "Förhandsvisning"
 
@@ -2581,11 +2696,15 @@ msgstr "Förhandsvisning"
 msgid "Configure Snap"
 msgstr "Konfigurera Snap"
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/polygon_2d_editor_plugin.cpp tools/editor/plugins/sprite_region_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/sprite_region_editor_plugin.cpp
 msgid "Grid Offset:"
 msgstr "Grid Offset:"
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/polygon_2d_editor_plugin.cpp tools/editor/plugins/sprite_region_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/sprite_region_editor_plugin.cpp
 msgid "Grid Step:"
 msgstr "Grid Steg:"
 
@@ -2645,11 +2764,13 @@ msgstr "Tryck på 'v' för att ändra Pivot, \"Shift + v 'dra Pivot (när du fly
 msgid "Alt+RMB: Depth list selection"
 msgstr "Alt + RMB: Djup urvalslista"
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/spatial_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/spatial_editor_plugin.cpp
 msgid "Move Mode (W)"
 msgstr "Flytta läge (W)"
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/spatial_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/spatial_editor_plugin.cpp
 msgid "Rotate Mode (E)"
 msgstr "Rotera läge (E)"
 
@@ -2683,15 +2804,22 @@ msgstr "Ser till att objektets barn kan inte väljas."
 msgid "Restores the object's children's ability to be selected."
 msgstr "Åter objektets barns förmåga att väljas."
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/polygon_2d_editor_plugin.cpp tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp tools/editor/project_manager.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/project_manager.cpp
 msgid "Edit"
 msgstr "Redigera"
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/spatial_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/spatial_editor_plugin.cpp
 msgid "Use Snap"
 msgstr "användning Snap"
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/polygon_2d_editor_plugin.cpp tools/editor/plugins/sprite_region_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/sprite_region_editor_plugin.cpp
 msgid "Show Grid"
 msgstr "Visa rutnät"
 
@@ -2703,7 +2831,8 @@ msgstr "Använda Rotation Snap"
 msgid "Snap Relative"
 msgstr "snäpp Relativ"
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/spatial_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/spatial_editor_plugin.cpp
 msgid "Configure Snap.."
 msgstr "Konfigurera Snap .."
 
@@ -2735,7 +2864,8 @@ msgstr "Göra IK Chain"
 msgid "Clear IK Chain"
 msgstr "Klar IK Chain"
 
-#: tools/editor/plugins/canvas_item_editor_plugin.cpp tools/editor/plugins/spatial_editor_plugin.cpp
+#: tools/editor/plugins/canvas_item_editor_plugin.cpp
+#: tools/editor/plugins/spatial_editor_plugin.cpp
 msgid "View"
 msgstr "Visa"
 
@@ -2795,21 +2925,34 @@ msgstr "Ange ett värde"
 msgid "Snap (Pixels):"
 msgstr "Snap (bildpunkter):"
 
-#: tools/editor/plugins/collision_polygon_2d_editor_plugin.cpp tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/collision_polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
 msgid "Create Poly"
 msgstr "skapa Poly"
 
-#: tools/editor/plugins/collision_polygon_2d_editor_plugin.cpp tools/editor/plugins/collision_polygon_editor_plugin.cpp tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/collision_polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/collision_polygon_editor_plugin.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
 msgid "Edit Poly"
 msgstr "Redigera Poly"
 
-#: tools/editor/plugins/collision_polygon_2d_editor_plugin.cpp tools/editor/plugins/collision_polygon_editor_plugin.cpp tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/collision_polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/collision_polygon_editor_plugin.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
 msgid "Edit Poly (Remove Point)"
 msgstr "Edit Poly (Ta Point)"
 
-#: tools/editor/plugins/collision_polygon_2d_editor_plugin.cpp tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/collision_polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
 msgid "Create a new polygon from scratch."
 msgstr "Skapa en ny polygon från scratch."
 
@@ -2825,7 +2968,8 @@ msgstr "inställd Handtag"
 msgid "Add/Remove Color Ramp Point"
 msgstr "Lägg till / ta bort färg Ramp Point"
 
-#: tools/editor/plugins/color_ramp_editor_plugin.cpp tools/editor/plugins/shader_graph_editor_plugin.cpp
+#: tools/editor/plugins/color_ramp_editor_plugin.cpp
+#: tools/editor/plugins/shader_graph_editor_plugin.cpp
 msgid "Modify Color Ramp"
 msgstr "Ändra Color Ramp"
 
@@ -2841,7 +2985,9 @@ msgstr "Miniatyrbild"
 msgid "Remove item %d?"
 msgstr "Ta bort objektet %d ?"
 
-#: tools/editor/plugins/cube_grid_theme_editor_plugin.cpp tools/editor/plugins/theme_editor_plugin.cpp tools/editor/plugins/tile_set_editor_plugin.cpp
+#: tools/editor/plugins/cube_grid_theme_editor_plugin.cpp
+#: tools/editor/plugins/theme_editor_plugin.cpp
+#: tools/editor/plugins/tile_set_editor_plugin.cpp
 msgid "Add Item"
 msgstr "Lägg till vara"
 
@@ -2873,19 +3019,23 @@ msgstr "Punkt listredigeraren"
 msgid "Create Occluder Polygon"
 msgstr "Skapa ockluderingsanordning Polygon"
 
-#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
 msgid "Edit existing polygon:"
 msgstr "Redigera befintlig polygon:"
 
-#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
 msgid "LMB: Move Point."
 msgstr "LMB: Flytta Point."
 
-#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
 msgid "Ctrl+LMB: Split Segment."
 msgstr "Ctrl + LMB: Split segment."
 
-#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp tools/editor/plugins/navigation_polygon_editor_plugin.cpp
+#: tools/editor/plugins/light_occluder_2d_editor_plugin.cpp
+#: tools/editor/plugins/navigation_polygon_editor_plugin.cpp
 msgid "RMB: Erase Point."
 msgstr "RMB: Radera Point."
 
@@ -3145,7 +3295,8 @@ msgstr "Volym"
 msgid "Remove Point from Curve"
 msgstr "Ta bort Point från Curve"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Add Point to Curve"
 msgstr "Lägg till punkt till Curve"
 
@@ -3161,19 +3312,23 @@ msgstr "Flytta In-Control i kurva"
 msgid "Move Out-Control in Curve"
 msgstr "Flytta ut-Control i kurva"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Select Points"
 msgstr "Välj Points"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Shift+Drag: Select Control Points"
 msgstr "Skift + dra: Välj kontrollpunkter"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Click: Add Point"
 msgstr "Klicka: Lägg Point"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Right Click: Delete Point"
 msgstr "Högerklicka: Ta bort Point"
 
@@ -3181,19 +3336,23 @@ msgstr "Högerklicka: Ta bort Point"
 msgid "Select Control Points (Shift+Drag)"
 msgstr "Välj kontrollpunkter (Skift + dra)"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Add Point (in empty space)"
 msgstr "Lägg till punkt (i tomt utrymme)"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Split Segment (in curve)"
 msgstr "Split segment (i kurva)"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Delete Point"
 msgstr "radera Point"
 
-#: tools/editor/plugins/path_2d_editor_plugin.cpp tools/editor/plugins/path_editor_plugin.cpp
+#: tools/editor/plugins/path_2d_editor_plugin.cpp
+#: tools/editor/plugins/path_editor_plugin.cpp
 msgid "Close Curve"
 msgstr "nära Curve"
 
@@ -3273,15 +3432,18 @@ msgstr "UV-> Polygon"
 msgid "Clear UV"
 msgstr "klar UV"
 
-#: tools/editor/plugins/polygon_2d_editor_plugin.cpp tools/editor/plugins/sprite_region_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/sprite_region_editor_plugin.cpp
 msgid "Snap"
 msgstr "Knäpp fotot"
 
-#: tools/editor/plugins/polygon_2d_editor_plugin.cpp tools/editor/plugins/sprite_region_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/sprite_region_editor_plugin.cpp
 msgid "Enable Snap"
 msgstr "aktivera Snap"
 
-#: tools/editor/plugins/polygon_2d_editor_plugin.cpp tools/editor/plugins/sprite_region_editor_plugin.cpp
+#: tools/editor/plugins/polygon_2d_editor_plugin.cpp
+#: tools/editor/plugins/sprite_region_editor_plugin.cpp
 msgid "Grid"
 msgstr "Rutnät"
 
@@ -3297,7 +3459,8 @@ msgstr "Lägg till resurs"
 msgid "Rename Resource"
 msgstr "byta namn på resurs"
 
-#: tools/editor/plugins/resource_preloader_editor_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: tools/editor/plugins/resource_preloader_editor_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
 msgid "Delete Resource"
 msgstr "radera Resource"
 
@@ -3305,7 +3468,8 @@ msgstr "radera Resource"
 msgid "Resource clipboard is empty!"
 msgstr "Resurs Urklipp är tom!"
 
-#: tools/editor/plugins/resource_preloader_editor_plugin.cpp tools/editor/plugins/sprite_frames_editor_plugin.cpp
+#: tools/editor/plugins/resource_preloader_editor_plugin.cpp
+#: tools/editor/plugins/sprite_frames_editor_plugin.cpp
 msgid "Load Resource"
 msgstr "belastning Resource"
 
@@ -3361,7 +3525,8 @@ msgstr "Stereo"
 msgid "Mono"
 msgstr "Mono"
 
-#: tools/editor/plugins/sample_library_editor_plugin.cpp tools/editor/script_editor_debugger.cpp
+#: tools/editor/plugins/sample_library_editor_plugin.cpp
+#: tools/editor/script_editor_debugger.cpp
 msgid "Format"
 msgstr "Format"
 
@@ -3393,11 +3558,13 @@ msgstr "import Theme"
 msgid "Save Theme As.."
 msgstr "Spara tema som .."
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/project_export.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/project_export.cpp
 msgid "File"
 msgstr "Fil"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/property_editor.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/property_editor.cpp
 msgid "New"
 msgstr "Ny"
 
@@ -3425,11 +3592,13 @@ msgstr "Spara tema"
 msgid "Save Theme As"
 msgstr "Spara tema som"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/scene_tree_dock.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/scene_tree_dock.cpp
 msgid "Move Up"
 msgstr "Flytta upp"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/scene_tree_dock.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/scene_tree_dock.cpp
 msgid "Move Down"
 msgstr "Flytta ned"
 
@@ -3461,19 +3630,23 @@ msgstr "Trim avslutande blank"
 msgid "Auto Indent"
 msgstr "Automatiskt indrag"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
 msgid "Find.."
 msgstr "Sök"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
 msgid "Find Next"
 msgstr "Hitta nästa"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
 msgid "Find Previous"
 msgstr "Sök föregående"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
 msgid "Replace.."
 msgstr "Byta ut.."
 
@@ -3481,7 +3654,8 @@ msgstr "Byta ut.."
 msgid "Goto Function.."
 msgstr "Goto funktion .."
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/plugins/shader_editor_plugin.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/plugins/shader_editor_plugin.cpp
 msgid "Goto Line.."
 msgstr "Gå till rad .."
 
@@ -3505,19 +3679,23 @@ msgstr "Goto Nästa Brytpunkt"
 msgid "Goto Previous Breakpoint"
 msgstr "Goto Föregående Brytpunkt"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/script_editor_debugger.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/script_editor_debugger.cpp
 msgid "Step Over"
 msgstr "Kliva över"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/script_editor_debugger.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/script_editor_debugger.cpp
 msgid "Step Into"
 msgstr "Stiga in i"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/script_editor_debugger.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/script_editor_debugger.cpp
 msgid "Break"
 msgstr "Ha sönder"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/script_editor_debugger.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/script_editor_debugger.cpp
 msgid "Continue"
 msgstr "Nästa"
 
@@ -3595,7 +3773,8 @@ msgstr "Uppdatera"
 msgid "Resave"
 msgstr "spara om"
 
-#: tools/editor/plugins/script_editor_plugin.cpp tools/editor/script_editor_debugger.cpp
+#: tools/editor/plugins/script_editor_plugin.cpp
+#: tools/editor/script_editor_debugger.cpp
 msgid "Debugger"
 msgstr "debugger"
 
@@ -4123,7 +4302,8 @@ msgstr "Lägg till alla artiklar"
 msgid "Add All"
 msgstr "Lägg till alla"
 
-#: tools/editor/plugins/theme_editor_plugin.cpp tools/editor/plugins/tile_set_editor_plugin.cpp
+#: tools/editor/plugins/theme_editor_plugin.cpp
+#: tools/editor/plugins/tile_set_editor_plugin.cpp
 msgid "Remove Item"
 msgstr "Ta bort sak"
 
@@ -4187,7 +4367,9 @@ msgstr "tabulator"
 msgid "Tab 3"
 msgstr "tabulator"
 
-#: tools/editor/plugins/theme_editor_plugin.cpp tools/editor/project_settings.cpp tools/editor/scene_tree_editor.cpp tools/editor/script_editor_debugger.cpp
+#: tools/editor/plugins/theme_editor_plugin.cpp
+#: tools/editor/project_settings.cpp tools/editor/scene_tree_editor.cpp
+#: tools/editor/script_editor_debugger.cpp
 msgid "Type:"
 msgstr "Typ:"
 
@@ -4211,7 +4393,8 @@ msgstr "Färg"
 msgid "Paint TileMap"
 msgstr "måla TileMap"
 
-#: tools/editor/plugins/tile_map_editor_plugin.cpp tools/editor/scene_tree_dock.cpp
+#: tools/editor/plugins/tile_map_editor_plugin.cpp
+#: tools/editor/scene_tree_dock.cpp
 msgid "Duplicate"
 msgstr "Dubblett"
 
@@ -4287,7 +4470,8 @@ msgstr "Skapa från scen"
 msgid "Merge from Scene"
 msgstr "Slå ihop från scen"
 
-#: tools/editor/plugins/tile_set_editor_plugin.cpp tools/editor/script_editor_debugger.cpp
+#: tools/editor/plugins/tile_set_editor_plugin.cpp
+#: tools/editor/script_editor_debugger.cpp
 msgid "Error"
 msgstr "Fel"
 
